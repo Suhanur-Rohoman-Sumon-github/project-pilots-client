@@ -5,7 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import router from "./Routes/routes";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div>
+    <div className="bg-black">
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>
