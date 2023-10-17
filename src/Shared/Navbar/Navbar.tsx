@@ -9,7 +9,7 @@ import Button from "../../components/Button/Button.tsx";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 flex justify-between w-full  items-center lg:px-28 px-4 lg:py-6  py-4 bg-black">
+    <div className="fixed top-0 left-0 flex justify-between w-full  items-center lg:px-28 px-4 lg:py-6  py-4 bg-black z-50">
       <div className="text-2xl lg:text-3xl text-white font-serif order-2 lg:order-1 font-bold cursor-pointer">
         <Link to="/" className="sm:m-0 sm:p-0  ">
           Task Wave
@@ -29,7 +29,7 @@ const Navbar = () => {
           <div
             className={`links flex  text-white absolute lg:static duration-500 lg:flex-row flex-col justify-center text-lg ${
               open
-                ? "block left-16 top-[70px] -ml-16 z-20 lg:bg-inherit bg-black w-full  text-white shadow-2xl py-5 gap-2 pl-10"
+                ? "block left-16 top-[70px] -ml-16 z-50 lg:bg-inherit bg-black w-full  text-white shadow-2xl py-5 gap-2 pl-10"
                 : "hidden lg:block"
             }`}
           >
