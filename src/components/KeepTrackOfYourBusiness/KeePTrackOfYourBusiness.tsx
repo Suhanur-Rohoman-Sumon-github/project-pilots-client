@@ -48,7 +48,7 @@ const KeePTrackOfYourBusiness = () => {
               <div>
                 <Texts
                   styledTitle="Class Management"
-                  peragraphText="Discover the convenience of our class booking feature. Reserve your spot in your favorite classes with ease and ensure you never miss a session. Get ready to embark on your fitness journey or expand your horizons with ease."
+                  peragraphText="Discover the convenience of our class booking feature. Reserve your spot in your favorite classes with ease and ensure you never miss a session. Get ready to embark on your fitness journey or expand your horizons with ease. mange your project easily"
                   headerText=""
                 />
               </div>
