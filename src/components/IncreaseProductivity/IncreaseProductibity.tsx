@@ -21,7 +21,7 @@ const IncreaseProductivity = () => {
         <div className="basis-1/2">
           <Texts
             styledTitle="Productivity"
-            headerText="Supercharge Your "
+            headerText=""
             peragraphText="Unleash your full potential and boost your productivity. Explore tools, tips, and strategies to maximize your efficiency, accomplish more, and achieve your goals."
           />
         </div>

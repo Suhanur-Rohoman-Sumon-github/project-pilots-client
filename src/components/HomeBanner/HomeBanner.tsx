@@ -5,7 +5,7 @@ import { GiRoundStar } from "react-icons/gi";
 import { VscStarFull } from "react-icons/vsc";
 const HomeBanner = () => {
   return (
-    <div className="h-fit">
+    <div className="h-fit z-20">
       <div className="flex items-center flex-col space-y-10 relative ">
         <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-8 left-80" />
         <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-0 lg:top-12 right-72" />

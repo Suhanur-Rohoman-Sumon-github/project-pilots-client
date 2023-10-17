@@ -14,7 +14,7 @@ const KeepTrackOfTask = () => {
         <div className="basis-1/2">
           <Texts
             styledTitle="Task"
-            headerText="Effortless Management "
+            headerText="Management "
             peragraphText="Simplify your life with our user-friendly dashboard. Create, prioritize, and track your tasks hassle-free."
           />
         </div>
