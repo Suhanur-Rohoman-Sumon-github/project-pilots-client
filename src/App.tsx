@@ -3,7 +3,7 @@
 const App = () => {
   return (
     <div>
-      <h1>this is project pilot client</h1>
+      <h1>this is project pilot clients</h1>
     </div>
   );
 };
