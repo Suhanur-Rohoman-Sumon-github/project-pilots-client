@@ -5,7 +5,7 @@ import { GiRoundStar } from "react-icons/gi";
 import { VscStarFull } from "react-icons/vsc";
 const HomeBanner = () => {
   return (
-    <div className="h-fit z-20">
+    <div className="h-fit !z-0">
       <div className="flex items-center flex-col space-y-10 relative ">
         <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-8 left-80" />
         <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-0 lg:top-12 right-72" />
@@ -31,8 +31,8 @@ const HomeBanner = () => {
           </p>
         </div>
         <div className="flex w-full lg:flex-row justify-center items-center">
-          <div className="flex gap-5 border border-t-0 border-l-0 border-b-0 border-r-2 border-gray-400 px-5 mr-5">
-            <div className="flex items-start">
+          <div className="flex lg:flex-row flex-col items-start lg:items-end gap-5 border border-t-0 border-l-0 border-b-0 border-r-2 border-gray-400 px-5 mr-5">
+            <div className="flex  items-start">
               <img
                 src="https://i.ibb.co/WgXHXF7/paul.jpg"
                 className="w-12 h-12 rounded-full relative left-10 z-10"

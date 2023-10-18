@@ -24,7 +24,7 @@
   transform: rotate(calc(360deg / 8 * var(--i)));
   box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
   transform-origin: 340px;
-  z-index: 100;
+  z-index: 30;
   overflow: hidden;
 }
 
@@ -129,9 +129,6 @@
     0 0 100px #ff2d60;
 }
 
-.text_title {
-  text-decoration: none !important;
-}
 
 .card-1::before {
   content: "";

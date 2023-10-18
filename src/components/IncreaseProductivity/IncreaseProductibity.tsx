@@ -18,14 +18,14 @@ const IncreaseProductivity = () => {
         />
       </div>
       <div className="flex justify-between items-center lg:flex-row-reverse flex-col-reverse gap-10 h-[700px] lg:h-[500px]">
-        <div className="basis-1/2">
+        <div className="lg:basis-1/2 basis-full">
           <Texts
             styledTitle="Productivity"
             headerText=""
             peragraphText="Unleash your full potential and boost your productivity. Explore tools, tips, and strategies to maximize your efficiency, accomplish more, and achieve your goals."
           />
         </div>
-        <div className="basis-1/2">
+        <div className="lg:basis-1/2 basis-full">
           <Video VideoSource={myVideo} />
         </div>
       </div>

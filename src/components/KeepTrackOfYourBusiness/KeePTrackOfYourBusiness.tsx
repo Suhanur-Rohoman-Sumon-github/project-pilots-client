@@ -24,10 +24,10 @@ const KeePTrackOfYourBusiness = () => {
         />
       </div>
       <div className="flex justify-between items-center lg:flex-row-reverse flex-col-reverse gap-10 h-[700px] lg:h-[500px] ">
-        <div className="basis-1/2">
+        <div className="lg:basis-1/2 basis-full">
           <Video VideoSource={TaskVideo}></Video>
         </div>
-        <div className="basis-1/2">
+        <div className="lg:basis-1/2 basis-full">
           <div className="flex flex-col gap-10">
             <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:bg-gradient-to-r from-red-600 to-purple-900">
               <div className="bg-pink-950 p-5 rounded-full">
