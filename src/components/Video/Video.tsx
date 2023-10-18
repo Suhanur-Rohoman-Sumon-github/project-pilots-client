@@ -7,7 +7,7 @@ const Video = ({
   }: HomeTemplateProps) => {
   return (
     <div>
-      <div className="basis-1/2 relative">
+      <div className="lg:basis-1/2 basis-full relative">
           <video
             width="100%"
             height="auto"

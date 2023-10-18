@@ -10,7 +10,7 @@ const Texts = ({
 }: HomeTemplateProps) => {
   return (
     <div>
-      <div className="basis-1/2">
+      <div className="lg:basis-1/2 basis-full">
         <div className="space-y-8 text-start ">
           <div className="flex gap-2 items-center">
             <h1 className="lg:text-5xl text-white  text-3xl font-bold leading-[1.2] ">
