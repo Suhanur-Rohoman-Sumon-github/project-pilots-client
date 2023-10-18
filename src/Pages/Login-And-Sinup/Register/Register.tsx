@@ -4,24 +4,29 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaSignInAlt, FaEyeSlash, FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { VscStarFull } from "react-icons/vsc";
 import Star from "../../../Assests/Other_Assests_File/Star";
-
-const Register = () =>{
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+interface FormValues {
+    email: string;
+    password: string;
+    name: string;
+    confirmPassword: string
+    photo:string
+}
+const Register = () => {
+    const { register, handleSubmit, watch, formState: { errors } } = useForm<FormValues>();
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    const onSubmit = data => {
-        const { name, email, password, photo } = data
+    const onSubmit = (data:FormValues) => {
+       console.log(data)
     }
     const handleGooglesinin = () => { }
 
     return (
         <div className="bg-black mt-6">
-            <div className="hero min-h-screen ">
-            <Star />
+            <div className="hero min-h-screen relative">
+                <Star />
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    
+
                     <div className=" ">
                         <Player
                             autoplay
@@ -46,12 +51,12 @@ const Register = () =>{
                     <div className="cards flex-shrink-0 w-full max-w-lg ">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <div className="flex items-center gap-2">
-                                <div className="form-control">                                  
+                                <div className="form-control">
                                     <input type="text"  {...register("name", { required: true })} placeholder="your name" className="input input-bordered" />
                                 </div>
                                 {errors.name?.type === 'required' && <p className="text-red-500">name is required</p>}
                                 <div className="form-control">
-                                  
+
                                     <input type="email"  {...register("email", { required: true })} placeholder="your email" className="input input-bordered" />
                                 </div>
                                 {errors.email?.type === 'required' && <p className="text-red-500">Email is required</p>}
@@ -75,7 +80,7 @@ const Register = () =>{
                                 </div>
                                 <div className="form-control">
                                     <div className="relative">
-                                        <input type={showConfirmPassword ? 'text' : 'password'}  {...register('confirm-password', {
+                                        <input type={showConfirmPassword ? 'text' : 'password'}  {...register('confirmPassword', {
                                             required: true,
                                             validate: (value) => value === watch('password')
                                         })} placeholder="confirm-password" className="input input-bordered w-full" />
@@ -93,10 +98,10 @@ const Register = () =>{
                             {errors.password?.type === 'minLength' && <p className="text-red-500">password must be atlist 6 charectar</p>}
                             {errors.password?.type === 'maxLength' && <p className="text-red-500">Password is smaller then 20 charectar</p>}
                             {errors.password?.type === 'pattern' && <p className="text-red-500">password must be one uppercase one lower case one numbar and one special cherecter</p>}
-                            {errors['confirm-password']?.type === 'required' && (
+                            {errors['confirmPassword']?.type === 'required' && (
                                 <p className="text-red-500">Confirm password is required</p>
                             )}
-                            {errors['confirm-password']?.type === 'validate' && (
+                            {errors['confirmPassword']?.type === 'validate' && (
                                 <p className="text-red-500">Password must match the previous password</p>
                             )}
                             <div className="form-control">
@@ -114,7 +119,7 @@ const Register = () =>{
                 </div>
             </div>
         </div>
-);
+    );
 };
 
 export default Register;

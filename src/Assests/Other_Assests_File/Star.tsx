@@ -3,7 +3,7 @@ import { VscStarFull } from "react-icons/vsc";
 
 const Star = () => {
     return (
-        <div className="relative">
+        <div >
             <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-20 md:left-90" />
             <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-20 md:left-80" />
             <VscStarFull className="text-pink-600 text-4xl animate-pulse absolute top-1/4 md:left-16" />
