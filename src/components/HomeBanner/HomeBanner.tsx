@@ -16,7 +16,7 @@ const HomeBanner = () => {
           <Scribfolio />
         </div>
         <div className="glow-bg-2 w-[300px] lg:[900px] "></div>
-        <span className="text-4xl  text-center space-y-2 bg-gradient-to-r text-transparent bg-clip-text from-[#fcff2f] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#f9ff40] leading-10">
+        <span className="text-5xl  text-center space-y-2 bg-gradient-to-r text-transparent bg-clip-text from-[#fcff2f] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#f9ff40] leading-10">
           <p>Simplified Productivity App</p> <p>To Track All Your Tasks</p>
         </span>
         <p className="text-center text-white">
