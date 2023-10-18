@@ -1,4 +1,4 @@
-import taskVideo from "../../Videos/Node_Your_Daily_Task.mp4";
+import taskVideo from "../../Videos/8c50c501e872ba1d5ff52e5ad2b5b637.mp4";
 import Texts from "../Texts/Texts";
 import Video from "../Video/Video";
 const ManageTask = () => {
