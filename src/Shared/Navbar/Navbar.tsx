@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {  useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
@@ -33,28 +33,20 @@ const Navbar = () => {
                 : "hidden lg:block"
             }`}
           >
-            <ActiveLink  to="/">
-              Home
-            </ActiveLink>
-            <ActiveLink to="/about">
-              About Us
-            </ActiveLink>
-            <ActiveLink to="/about">
-              Pricing
-            </ActiveLink>
-            <ActiveLink to="/about">
-              Features
-            </ActiveLink>
+            <ActiveLink to="/">Home</ActiveLink>
+            <ActiveLink to="/aboutUs">About Us</ActiveLink>
+            <ActiveLink to="/pricing">Pricing</ActiveLink>
+            <ActiveLink to="/features">Features</ActiveLink>
           </div>
         </div>
         <div></div>
       </div>
       <div className="order-3 lg:order-3">
-          <div className="cursor-pointer ">
-            <Link to="/login">
-              <Button>Login</Button>
-            </Link>
-          </div>
+        <div className="cursor-pointer ">
+          <Link to="/login">
+            <Button>Login</Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
