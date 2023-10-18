@@ -17,7 +17,7 @@ const BusinessSegment = () => {
         />
       </div>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
-        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:bg-gradient-to-r from-[#FF56F6] via-[#ff5cf7] to-[#fcff2f]">
+        <div className="flex lg:flex-row flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl  transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 hover:bg-gradient-to-r from-red-600 to-purple-900">
           <div className="bg-pink-950  p-5 rounded-full">
             <FcSportsMode className="text-2xl " />
           </div>
@@ -29,7 +29,7 @@ const BusinessSegment = () => {
             />
           </div>
         </div>
-        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:bg-gradient-to-r from-[#FF56F6] via-[#ff5cf7] to-[#fcff2f]">
+        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:hover:bg-gradient-to-r from-red-600 to-purple-900">
           <div className="bg-pink-950 p-5 rounded-full">
             <MdCastForEducation className="text-2xl " />
           </div>
@@ -41,7 +41,7 @@ const BusinessSegment = () => {
             />
           </div>
         </div>
-        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:bg-gradient-to-r from-[#FF56F6] via-[#ff5cf7] to-[#fcff2f]">
+        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:hover:bg-gradient-to-r from-red-600 to-purple-900">
           <div className="bg-pink-950 p-5 rounded-full">
             <BiPlusMedical className="text-2xl " />
           </div>
@@ -53,7 +53,7 @@ const BusinessSegment = () => {
             />
           </div>
         </div>
-        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:bg-gradient-to-r from-[#FF56F6] via-[#ff5cf7] to-[#fcff2f]">
+        <div className="flex lg:flex-row transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-start  gap-5 px-10 py-6 bg-gray-950 shadow-2xl group rounded-2xl hover:hover:bg-gradient-to-r from-red-600 to-purple-900">
           <div className="bg-pink-950 p-5 rounded-full">
             <MdEmojiEvents className="text-2xl " />
           </div>
