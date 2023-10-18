@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 flex justify-between w-full  items-center lg:px-28 px-4 lg:py-6  py-4 bg-black lg:z-0 z-40">
       <div className="text-2xl lg:text-3xl text-white font-serif order-2 lg:order-1 font-bold cursor-pointer">
         <Link to="/" className="sm:m-0 sm:p-0  ">
-          Project Pilot
+          <img src="https://i.ibb.co/mHNtj79/vite.png" className="h-24 w-24" alt="" />
         </Link>
       </div>
       <div className="flex justify-between order-1 lg:order-2 items-center flex-row-reverse lg:flex-row">
