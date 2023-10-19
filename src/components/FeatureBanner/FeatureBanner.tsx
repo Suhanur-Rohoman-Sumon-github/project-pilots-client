@@ -10,7 +10,6 @@ const FeatureBanner = () => {
             headerText="Give work a new look with "
             styledTitle="Project Pilot views."
             peragraphText="See your projects from every angle with Board, Timeline, Table, Calendar, Dashboard, Map and Workspace views that will bring a fresh perspective to the task at hand.
-
             Boards are available to all users. Additional views require a Premium or Enterprise account."
           />
         </div>
