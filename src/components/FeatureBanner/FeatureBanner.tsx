@@ -7,8 +7,8 @@ const FeatureBanner = () => {
       <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-10">
         <div className="basis-1/2 lg:basis-full">
           <Texts
-            headerText="Give work a new look with "
-            styledTitle="Project Pilot views."
+            headerText="Give work a new look with Project Pilot "
+            styledTitle=""
             peragraphText="See your projects from every angle with Board, Timeline, Table, Calendar, Dashboard, Map and Workspace views that will bring a fresh perspective to the task at hand.
             Boards are available to all users. Additional views require a Premium or Enterprise account."
           />
