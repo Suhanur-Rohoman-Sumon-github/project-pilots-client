@@ -8,7 +8,7 @@ const ManageTask = () => {
         <Texts
           headerText="Manage Your Online "
           styledTitle="Tasks."
-          peragraphText="With task wave you can effortlessly streamline your workflow,
+          peragraphText="With project pilot you can effortlessly streamline your workflow,
             prioritize assignments, and ensure nothing falls through the cracks.
             Our user-friendly interface allows you to create, edit, and
             categorize tasks with ease, ensuring you have a clear overview of
