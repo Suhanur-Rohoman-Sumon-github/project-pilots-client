@@ -28,7 +28,7 @@ const Footer = () => {
       <footer className="footer px-10 py-4 border-t bg-black text-white border-base-300">
         <aside className="items-center grid-flow-col">
           <div className="flex flex-col">
-            <p className="text-xl font-bold">Task Wave</p>
+            <p className="text-xl font-bold">project pilot</p>
             <p className="text-xs font-semibold">
               Providing reliable todo-listing since 2015
             </p>

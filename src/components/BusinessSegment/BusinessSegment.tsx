@@ -11,7 +11,7 @@ const BusinessSegment = () => {
       </div>
       <div className="flex items-center justify-center">
         <Texts
-          headerText="Task wave has the ability to serve "
+          headerText="project pilot has the ability to serve "
           styledTitle="any Business"
           peragraphText=""
         />

@@ -12,7 +12,7 @@ const Texts = ({
     <div>
       <div className="lg:basis-1/2 basis-full">
         <div className="space-y-8 text-start ">
-          <div className="flex gap-2 items-center">
+          <div className="flex flex-col gap-2 items-center">
             <h1 className="lg:text-5xl text-white  text-3xl font-bold leading-[1.2] ">
               {headerText}
             </h1>
