@@ -30,7 +30,7 @@ const ScrollToTop = () => {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-4 right-4 bg-gradient-to-r from-red-600 to-purple-900  font-semibold p-3 rounded-full animate-bounce"
+          className="fixed bottom-4 right-4 bg-gradient-to-r from-red-600 to-purple-900  font-semibold p-3 rounded-full animate-bounce z-50"
           onClick={scrollToTop}
         >
           <BiUpArrowAlt className="text-3xl text-white" />

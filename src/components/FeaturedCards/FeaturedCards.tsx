@@ -9,11 +9,12 @@ import { HiMiniBellAlert } from "react-icons/hi2";
 import { FaMobile, FaUserShield } from "react-icons/fa";
 const FeaturedCards = () => {
   return (
-    <div>
+    <div className="relative z-50">
       <div className="flex items-center justify-center">
         <Texts headerText="Our" styledTitle="Best Features" peragraphText="" />
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
+      <div className="rounded_gradient_bg_left rounded-br-full bg-pink-500 absolute top-20 left-0 w-96 h-96 hidden lg:block "></div>
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 z-50">
         <Card
           icon={<GoChecklist />}
           headerTitle="Task"
