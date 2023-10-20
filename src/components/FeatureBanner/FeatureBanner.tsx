@@ -1,10 +1,10 @@
 import Texts from "../Texts/Texts";
 import Lottie from "lottie-react";
-import features from "../../Assests/Lottie_Animation_file/i7loPmBhJx.json";
+import features from "../../Assests/Lottie_Animation_file/HDtxYEF3cl.json";
 const FeatureBanner = () => {
   return (
     <div>
-      <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-10">
+      <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:gap-10 gap-40">
         <div className="basis-1/2 lg:basis-full">
           <Texts
             headerText="Give work a new look with Project Pilot "
@@ -15,7 +15,7 @@ const FeatureBanner = () => {
         </div>
         <div className="basis-1/2 lg:basis-full">
           <div className="w-full h-56  sm:h-96">
-            <Lottie animationData={features} loop={true} />
+            <Lottie className="h-[450px]" animationData={features} loop={true} />
           </div>
         </div>
       </div>

@@ -7,16 +7,19 @@
   --blue: #03b5d2;
 }
 
-
-
-
-
-
 /* Container styles */
 .container {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 350px;
+  }
 }
 
 
@@ -34,14 +37,10 @@
   cursor: pointer;
 }
 
-  /* Hover styles */
-  .btn:hover {
-    background: transparent;
-  }
-
-.btn:hover, .btn:focus {
-  color: var(--blue);
+.accordion-title{
+  background-color: transparent;
 }
+
 
 .button .icon {
   display: inline-block;
@@ -73,7 +72,6 @@
   left: 9px;
   width: 2px;
   height: 10px;
-  background: currentColor;
 }
 
 .btn[aria-expanded='true'] {
@@ -91,6 +89,6 @@
 
 .accordion-content.open {
   opacity: 1;
-  max-height: 9em;
+  max-height: 25em;
   transition: all 200ms linear;
 }
