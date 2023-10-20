@@ -1,4 +1,5 @@
 import FeatureBanner from "../../components/FeatureBanner/FeatureBanner";
+import FeatureFAQ from "../../components/FeatureFAQ/FeatureFAQ";
 import FeaturedCards from "../../components/FeaturedCards/FeaturedCards";
 import FeaturedVideo from "../../components/FeaturedVideo/FeaturedVideo";
 
@@ -8,6 +9,7 @@ const Features = () => {
       <FeatureBanner />
       <FeaturedVideo />
       <FeaturedCards />
+      <FeatureFAQ/>
     </div>
   );
 };
