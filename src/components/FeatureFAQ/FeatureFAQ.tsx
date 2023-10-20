@@ -20,7 +20,7 @@ const FeatureFAQ = () => {
         </div>
         <div className="basis-1/2 lg:basis-full">
           <div className="w-full h-full">
-            <Lottie animationData={FAQ} loop={true} />
+            <Lottie className="w-[300px] lg:w-[500px]" animationData={FAQ} loop={true} />
           </div>
         </div>
       </div>

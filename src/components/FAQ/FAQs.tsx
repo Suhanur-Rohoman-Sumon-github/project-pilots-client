@@ -37,21 +37,21 @@ const FAQs = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container p-4 lg:p-16 w-96 lg:w-[450px]">
       <div className="accordion">
         {faqItems.map((item) => (
           <div className="accordion-item" key={item.id}>
             <button
               id={`accordion-button-${item.id}`} 
-              className='btn'
+              className='btn bg-transparent hover:bg-transparent lg:mb-2 mb-1'
               aria-expanded={expandedItem === item.id}
               onClick={() => toggleItem(item.id)}
             >
-              <span className="accordion-title text-lg text-white font-semibold">{item.question}</span>
+              <span className="accordion-title text-xs lg:text-lg text-white font-semibold  ">{item.question}</span>
               <span className="icon" aria-hidden="true"></span>
             </button>
             <div className={`accordion-content ${expandedItem === item.id ? 'open' : ''}`}>
-              <p className=' py-6 px-10 py-6shadow-2xl  mt-4  rounded-2xl bg-gradient-to-r from-red-600 to-purple-900'>{item.answer}</p>
+              <p className=' py-6 px-10 shadow-2xl lg:mt-3 mt-6  rounded-2xl bg-gradient-to-r from-red-600 to-purple-900'>{item.answer}</p>
             </div>
           </div>
         ))}
