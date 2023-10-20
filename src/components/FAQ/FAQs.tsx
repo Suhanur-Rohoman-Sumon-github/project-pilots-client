@@ -4,29 +4,30 @@ const FAQs = () => {
   const faqItems = [
     {
       id: 1,
-      question: "Why is the moon sometimes out during the day?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+      question: "What is the primary purpose of this project management website?",
+      answer: "The primary purpose of our project management website is to help teams plan, organize, and execute their projects efficiently. It provides a centralized platform for managing tasks, resources, and project timelines.",
     },
     {
       id: 2,
-      question: "Why is the sky blue?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+      question: "What are the key features of this project management website?",
+      answer: "Our website offers a range of features, including task management, collaboration tools, Gantt charts, time tracking, reporting and analytics, document management, and more. These features are designed to streamline project workflows and enhance productivity.",
     },
     {
       id: 3,
-      question: "Will we ever discover aliens?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+      question: "How can I get started with the project management website?",
+      answer: "To get started, you can sign up for an account, either as a user or a worker, depending on your role. Once registered, you can access your dashboard, where you can start creating and managing projects, tasks, and team members.",
     },
     {
       id: 4,
-      question: "How much does the Earth weigh?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
+      question: "Can I customize my project's unique needs?",
+      answer: "Yes, our platform offers customization options. You can tailor various settings to fit the specific requirements of your projects and team.",
     },
     {
       id: 5,
-      question: "How do airplanes stay up?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
-    },
+      question: "Is my data and information secure on this website?",
+      answer: " Data security is a top priority. We implement robust security measures to protect your information. Your data is encrypted, and we follow industry best practices for safeguarding user data.",
+    }
+    
   ];
 
   const [expandedItem, setExpandedItem] = useState<number | null>(null);
@@ -46,11 +47,11 @@ const FAQs = () => {
               aria-expanded={expandedItem === item.id}
               onClick={() => toggleItem(item.id)}
             >
-              <span className="accordion-title">{item.question}</span>
+              <span className="accordion-title text-lg text-white font-semibold">{item.question}</span>
               <span className="icon" aria-hidden="true"></span>
             </button>
             <div className={`accordion-content ${expandedItem === item.id ? 'open' : ''}`}>
-              <p>{item.answer}</p>
+              <p className=' py-6 px-10 py-6shadow-2xl  mt-4  rounded-2xl bg-gradient-to-r from-red-600 to-purple-900'>{item.answer}</p>
             </div>
           </div>
         ))}

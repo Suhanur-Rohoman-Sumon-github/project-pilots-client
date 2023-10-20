@@ -15,7 +15,7 @@ const FeatureFAQ = () => {
       <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-10">
         <div className=" basis-1/2 lg:basis-full">
           <div className="w-full h-full">
-          <FAQs />
+            <FAQs />
           </div>
         </div>
         <div className="basis-1/2 lg:basis-full">
