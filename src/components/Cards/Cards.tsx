@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
 import Texts from "../Texts/Texts";
+import React, { ReactNode } from "react";
 
 interface CardProps {
   icon: ReactNode;

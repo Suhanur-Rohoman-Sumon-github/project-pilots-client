@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Features from "../Pages/Features/Features";
 import Login from "../Pages/Login-And-Sinup/Login/Login";
 import Register from "../Pages/Login-And-Sinup/Register/Register";
+import Pricing from "../components/Pricing/Pricing";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/features",
         element: <Features />,
+      },
+      {
+        path : "/pricing",
+        element : <Pricing/>
       },
       {
         path: "/login",
