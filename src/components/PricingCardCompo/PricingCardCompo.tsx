@@ -8,8 +8,13 @@ interface PricingProps {
   headerTitle: string;
   description: string;
   price: number;
-  facilitiesText: string;
   buttonText: string;
+  facilitiesText1: string;
+  facilitiesText2: string;
+  facilitiesText3: string;
+  facilitiesText4: string;
+  facilitiesText5: string;
+  facilitiesText6: string;
 }
 const PricingCardCompo: React.FC<PricingProps> = ({
   icon,
@@ -18,12 +23,19 @@ const PricingCardCompo: React.FC<PricingProps> = ({
   headerTitle,
   styledTitle,
   description,
-  facilitiesText,
+  facilitiesText1,
+  facilitiesText2,
+  facilitiesText3,
+  facilitiesText4,
+  facilitiesText5,
+  facilitiesText6,
   buttonText,
 }) => {
   return (
     <div className="flex  transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-center gap-5 px-10 py-6 shadow-2xl group rounded-2xl bg-gradient-to-r from-red-600 to-purple-900">
-      <div className="bg-gradient-to-r from-red-600 to-purple-900 p-5 text-4xl rounded-full">{icon}</div>
+      <div className="bg-gradient-to-r from-red-600 to-purple-900 p-5 text-5xl rounded-full shadow-2xl">
+        {icon}
+      </div>
       <div>
         <Texts
           styledTitle={styledTitle}
@@ -38,19 +50,27 @@ const PricingCardCompo: React.FC<PricingProps> = ({
       <div className="flex flex-col gap-5 ">
         <div className="flex items-center gap-2">
           <div className=" text-white text-xl ">{checkIcon}</div>
-          <div>{facilitiesText}</div>
+          <div>{facilitiesText1}</div>
         </div>
         <div className="flex items-center gap-2">
           <div className=" text-white text-xl ">{checkIcon}</div>
-          <div>{facilitiesText}</div>
+          <div>{facilitiesText2}</div>
         </div>
         <div className="flex items-center gap-2">
           <div className=" text-white text-xl ">{checkIcon}</div>
-          <div>{facilitiesText}</div>
+          <div>{facilitiesText3}</div>
         </div>
         <div className="flex items-center gap-2">
           <div className=" text-white text-xl ">{checkIcon}</div>
-          <div>{facilitiesText}</div>
+          <div>{facilitiesText4}</div>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className=" text-white text-xl ">{checkIcon}</div>
+          <div>{facilitiesText5}</div>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className=" text-white text-xl ">{checkIcon}</div>
+          <div>{facilitiesText6}</div>
         </div>
       </div>
     </div>

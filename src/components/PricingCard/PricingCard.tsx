@@ -8,11 +8,16 @@ const PricingCard = () => {
         icon={<IoMdPaperPlane />}
         styledTitle="Basic"
         price={10}
-        buttonText="Order Now"
+        buttonText="Get Started"
         headerTitle=""
         description=""
         checkIcon={<AiOutlineCheck />}
-        facilitiesText="unlimited joy"
+        facilitiesText1="Task Management"
+        facilitiesText2="Collaboration Tools"
+        facilitiesText3="Gantt Charts (limited features)"
+        facilitiesText4="Document Management"
+        facilitiesText5="Mobile Accessibility"
+        facilitiesText6="Basic Support"
       />
     </div>
   );

@@ -1,9 +1,9 @@
 .priceButton {
-  padding: 10px 16px;
+  padding: 15px 35px;
   background-color: #ff2d60;
   color: #ffffff;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 40px;
   box-shadow: 0 0 5px #ff2d60, 0 0 25px #ff2d60, 0 0 50px #ff2d60,
     0 0 200px #ff2d60;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
