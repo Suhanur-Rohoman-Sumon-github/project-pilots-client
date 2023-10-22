@@ -5,7 +5,6 @@ import Video from "../Video/Video"
 import makePlan from "../../Videos/89090522.webm"
 const Planing = () => {
   return (
-    <div>
       <div>
       <div className="lg:flex lg:flex-row flex-col  hidden justify-between animate-pulse">
         <Scribfolio />
@@ -30,7 +29,6 @@ const Planing = () => {
           <Video VideoSource={makePlan} />
         </div>
       </div>
-    </div>
     </div>
   )
 }
