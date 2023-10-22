@@ -15,8 +15,8 @@ const KeepTrackOfTask = () => {
       <div  className="flex justify-between items-center lg:flex-row-reverse flex-col-reverse gap-10 h-[700px] lg:h-[500px]">
         <div className="lg:basis-1/2 basis-full">
           <Texts
-            styledTitle="Project Pilot"
-            headerText="Management Task with "
+            styledTitle="Dashboard"
+            headerText="User"
             peragraphText="Simplify your life with our user-friendly dashboard. Create, prioritize, and track your tasks hassle-free."
           />
         </div>
