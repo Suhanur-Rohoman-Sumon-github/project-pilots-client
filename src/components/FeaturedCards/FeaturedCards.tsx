@@ -14,7 +14,7 @@ const FeaturedCards = () => {
         <Texts headerText="Our" styledTitle="Best Features" peragraphText="" />
       </div>
       <div className="rounded_gradient_bg_left rounded-br-full bg-pink-500 absolute top-20 left-0 w-96 h-96 hidden lg:block "></div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 z-50">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 z-40">
         <Card
           icon={<GoChecklist />}
           headerTitle="Task"

@@ -12,13 +12,7 @@ const MakeDocuments = () => {
           <Arrow />
         </div>
       </div>
-      <div className="flex items-center justify-center">
-        <Texts
-          headerText="Make"
-          styledTitle=" Documents"
-          peragraphText=""
-        />
-      </div>
+      
       <div className="flex justify-between items-center lg:flex-row flex-col gap-10 h-[700px] lg:h-[500px]">
         <div className="lg:basis-1/2 basis-full">
           <Texts

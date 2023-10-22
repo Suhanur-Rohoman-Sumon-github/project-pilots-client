@@ -10,14 +10,8 @@ const Planing = () => {
         <Scribfolio />
         <Arrow />
       </div>
-      <div className="flex items-center justify-center">
-        <Texts
-          headerText=" Planing"
-          styledTitle=" and Scheduling  "
-          peragraphText=""
-        />
-      </div>
-      <div className="flex justify-between items-center lg:flex-row-reverse flex-col-reverse gap-10 h-[700px] lg:h-[500px]">
+      
+      <div className="flex justify-between items-center lg:flex-row-reverse flex-col gap-10 h-[700px] lg:h-[500px]">
         <div className="lg:basis-1/2 basis-full">
           <Texts
             styledTitle="and scheduling"
