@@ -5,6 +5,7 @@ import Features from "../Pages/Features/Features";
 import Login from "../Pages/Login-And-Sinup/Login/Login";
 import Register from "../Pages/Login-And-Sinup/Register/Register";
 import Pricing from "../components/Pricing/Pricing";
+import AboutUs from "../components/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path : "/pricing",
         element : <Pricing/>
+      },
+      {
+        path : "/aboutUs",
+        element : <AboutUs/>
       },
       {
         path: "/login",
