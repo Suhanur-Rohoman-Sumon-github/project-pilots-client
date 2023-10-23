@@ -45,7 +45,7 @@ const PricingCardCompo: React.FC<PricingProps> = ({
   }
   return (
     <Tilt options={defaultOptions}>
-      <div className="flex  transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-center gap-5 px-10 py-6 shadow-2xl group rounded-2xl bg-gradient-to-r from-red-600 to-purple-900">
+      <div className="flex  transition-all ease-in-out duration-500 hover:-translate-y-1 hover:-translate-x-1 flex-col items-center gap-5 px-10 py-6 shadow-2xl group rounded-2xl bg-gradient-to-r from-red-500 to-purple-700">
         <div className="bg-gradient-to-r from-red-600 to-purple-900 p-5 text-5xl rounded-full shadow-2xl">
           {icon}
         </div>
