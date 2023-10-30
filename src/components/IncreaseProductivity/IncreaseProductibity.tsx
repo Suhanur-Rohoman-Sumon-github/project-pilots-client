@@ -12,7 +12,7 @@ const IncreaseProductivity = () => {
       </div>
       <div className="flex items-center justify-center">
         <Texts
-          headerText="Increase "
+          headerText="Increase  "
           styledTitle="Productivity"
           peragraphText=""
         />
