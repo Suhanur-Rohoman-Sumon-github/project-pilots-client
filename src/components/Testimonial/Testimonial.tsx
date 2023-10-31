@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./Testimonial.css";
 import Texts from "../Texts/Texts";
 import Scribfolio from "../Scribfolio/Scribfolio";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const imageLinks = [
   {
     name: "Mohammad",
@@ -60,15 +63,26 @@ const Testimonial: React.FC = () => {
     setActiveContent(contentId);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
-    <div className="lg:flex hidden items-center justify-center flex-col mt-10 relative ">
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      className="lg:flex hidden items-center justify-center flex-col mt-10 relative "
+    >
       <Texts headerText="What They " styledTitle="Say?" peragraphText="" />
       <div className="rounded_gradient_bg_left rounded-br-full bg-pink-500 absolute top-20 left-0 w-96 h-96 hidden lg:block "></div>
       <div className="container-1 h-[600px] lg:w-[600px] w-[350px]  relative mt-20">
-        <div className="absolute top-0 left-[600px] lg:block hidden">
+        <div data-aos="fade-right" className="absolute top-0 left-[600px] lg:block hidden">
           <Scribfolio />
         </div>
-        <div className="absolute top-60 right-[600px] lg:block hidden">
+        <div data-aos="fade-left" className="absolute top-60 right-[600px] lg:block hidden">
           <Scribfolio />
         </div>
         <div className="icon">

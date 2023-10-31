@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 type HomeTemplateProps = {
   styledTitle: string;
   headerText: string;
@@ -8,8 +11,13 @@ const Texts = ({
   headerText,
   peragraphText,
 }: HomeTemplateProps) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="lg:basis-1/2 basis-full">
         <div className="space-y-8 text-start ">
           <div className="flex lg:flex-row flex-col items-start">

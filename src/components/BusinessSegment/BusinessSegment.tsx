@@ -4,10 +4,18 @@ import { MdCastForEducation, MdEmojiEvents } from "react-icons/md";
 import { FcSportsMode } from "react-icons/fc";
 import { BiPlusMedical } from "react-icons/bi";
 import Card from "../Cards/Cards";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const BusinessSegment = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
   return (
     <div className="">
-      <div className="lg:flex justify-end hidden">
+      <div  data-aos="fade-left" className="lg:flex justify-end hidden">
         <Arrow />
       </div>
       <div className="flex items-center justify-center">
