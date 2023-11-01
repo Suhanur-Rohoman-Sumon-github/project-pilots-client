@@ -15,8 +15,8 @@ const FeatureBanner = () => {
       <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:gap-10 gap-40">
         <div data-aos="fade-right" className="basis-1/2 lg:basis-full">
           <Texts
-            headerText="Give work a new look with Project Pilot "
-            styledTitle=""
+            headerText="Give work a"
+            styledTitle="new look"
             peragraphText="See your projects from every angle with Board, Timeline, Table, Calendar, Dashboard, Map and Workspace views that will bring a fresh perspective to the task at hand.
             Boards are available to all users. Additional views require a Premium or Enterprise account."
           />
