@@ -48,6 +48,7 @@ const Login = () => {
             </Player>
           </div>
           <div className="cards flex-shrink-0 w-full max-w-sm ">
+          <h1 className="text-white text-5xl font-bold">Sign In</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body ">
               <div className="form-control">
                 <input
@@ -82,17 +83,23 @@ const Login = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button type="submit" className="flex text-center justify-center items-center px-6 py-3 bg-pink-500 text-white rounded-lg cursor-pointer">
+                <button
+                  type="submit"
+                  className="flex text-center justify-center items-center px-6 py-3 bg-pink-500 text-white rounded-lg cursor-pointer"
+                >
                   <p className="text-xl font-semibold">Login</p>
                 </button>
               </div>
-              <div>
-                New to the project pilot? Please
-                <Link to="/singUp" className="text-blue-700 font-semibold relative left-1">
-                  Register
-                </Link>
-              </div>
             </form>
+            <div className="flex items-center justify-center">
+              New to the project pilot? Please
+              <Link
+                to="/singUp"
+                className="text-blue-700 font-semibold relative left-1"
+              >
+                Register
+              </Link>
+            </div>
             <div className="divider">OR</div>
             <div className="mb-3">
               <img
