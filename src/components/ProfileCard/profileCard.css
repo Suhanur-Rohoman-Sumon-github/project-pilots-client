@@ -1,7 +1,7 @@
 .card{
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 280px;
     background: #fff;
     transition: 0.5s ease-in-out;
 }
@@ -9,49 +9,22 @@
 .card .lines{
     position: absolute;
     inset: 0;
-    background: #000;
+    background: #111111;
     overflow: hidden;
-}
-
-.card .lines::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 120px;
-}
-
-@keyframes animate{
-    0%{
-        transform: translate(-50%,-50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
-    }
-}
-
-.card .lines::after{
-    content: "";
-    position: absolute;
-    inset: 3px;
-    background: #292929;
 }
 
 .card .img-box{
     position: absolute;
-    top: -50px;
+    top: -80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px;
-    height: 250px;
+    width: 170px;
+    height: 170px;
     background: #000;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
 }
-
 
 .card .img-box::before{
     content: "";
@@ -110,10 +83,11 @@
 
 
 .card .contents .details h2{
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-weight: 600;
     color: #45f3ff;
-    line-height: 1.2em;
+    line-height: 1em;
+    margin-top: 10px;
 }
 
 .card .contents .details h2 span{
