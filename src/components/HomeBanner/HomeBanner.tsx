@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import Scribfolio from "../Scribfolio/Scribfolio";
 import "./HomeBanner.css";
+import Typewriter from "typewriter-effect";
 import { GiRoundStar } from "react-icons/gi";
 import { VscStarFull } from "react-icons/vsc";
 const HomeBanner = () => {
@@ -16,8 +17,29 @@ const HomeBanner = () => {
           <Scribfolio />
         </div>
         <div className="glow-bg-2 w-[300px] lg:[900px] "></div>
-        <span className="text-5xl  text-center space-y-2 bg-gradient-to-r text-transparent bg-clip-text from-[#fcff2f] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#f9ff40] leading-10">
-          <p>Simplified Productivity App</p> <p>To Track All Your Tasks</p>
+        <span className="text-5xl  text-center  bg-gradient-to-r text-transparent bg-clip-text from-[#fcff2f] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#f9ff40] ">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  "Project Pilot <br/> Your Flight to Project Success."
+                )
+                .pauseFor(1000)
+                .deleteChars(31)
+                .typeString("Your Journey to Project Excellence.")
+                .pauseFor(1000)
+                .deleteChars(36)
+                .typeString("Guiding You to Project Success.")
+                .pauseFor(1000)
+                .deleteChars(31)
+                .typeString("Navigating Your Way to Excellence.")
+                .pauseFor(1000)
+                .deleteChars(34)
+                .typeString("Your Path to Successful Projects.")
+                .pauseFor(1000)
+                .start();
+            }}
+          />
         </span>
         <p className="text-center text-white">
           Task-Wave Is Hub For Managing Productivity Tasks <br /> Professionally
