@@ -1,7 +1,7 @@
 import ProfileCard from "../ProfileCard/ProfileCard";
 const MeetTeam = () => {
   return (
-    <div className="flex justify-around items-center gap-10">
+    <div className="flex lg:flex-row flex-col justify-around items-center gap-40">
       <ProfileCard
         facebookLink="https://www.facebook.com/profile.php?id=100056182026221&_rdc=1&_rdr"
         githubLink="https://github.com/Shakil57375"

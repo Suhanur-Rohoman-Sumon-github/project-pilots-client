@@ -1,8 +1,8 @@
 import taskVideo from "../../Videos/8c50c501e872ba1d5ff52e5ad2b5b637.mp4";
 import Texts from "../Texts/Texts";
+import Video from "../Video/Video";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Video from "../Video/Video";
 import { useEffect } from "react";
 const ManageTask = () => {
   useEffect(() => {
