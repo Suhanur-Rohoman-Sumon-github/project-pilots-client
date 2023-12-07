@@ -1,10 +1,18 @@
 import taskVideo from "../../Videos/8c50c501e872ba1d5ff52e5ad2b5b637.mp4";
 import Texts from "../Texts/Texts";
 import Video from "../Video/Video";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const ManageTask = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
   return (
     <div className="flex justify-between items-center lg:flex-row flex-col-reverse gap-10 h-[800px] lg:h-[500px]">
-      <div className="lg:basis-1/2 basis-full">
+      <div data-aos="fade-right" className="lg:basis-1/2 basis-full">
         <Texts
           headerText="Manage Your Online "
           styledTitle="Tasks."
@@ -15,7 +23,7 @@ const ManageTask = () => {
             your upcoming commitments."
         />
       </div>
-      <div className="lg:basis-1/2 basis-full relative">
+      <div data-aos="fade-left" className="lg:basis-1/2 basis-full relative">
         <Video VideoSource={taskVideo} />
       </div>
     </div>

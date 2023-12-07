@@ -3,9 +3,22 @@ import { IoMdPaperPlane } from "react-icons/io";
 import { AiOutlineCheck } from "react-icons/ai";
 import { BiSolidPlaneAlt } from "react-icons/bi";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const PricingCard = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-4">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+      className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 mt-4"
+    >
       <PricingCardCompo
         icon={<IoMdPaperPlane />}
         styledTitle="Basic"

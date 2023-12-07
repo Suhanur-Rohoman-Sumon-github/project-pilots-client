@@ -6,29 +6,38 @@ import { PiUsersFourFill } from "react-icons/pi";
 import { MdManageHistory } from "react-icons/md";
 import Texts from "../Texts/Texts";
 import Card from "../Cards/Cards";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const KeePTrackOfYourBusiness = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
   return (
     <div>
       <div className="lg:flex hidden lg:flex-row-reverse flex-col justify-between animate-pulse">
-        <div>
+        <div data-aos="fade-right">
           <Scribfolio />
-        </div>
-        <div className="transform rotate-180">
+        </div >
+        <div data-aos="fade-left" className="transform rotate-180">
           <Arrow />
         </div>
       </div>
       <div className="flex items-center justify-center">
         <Texts
+          
           headerText="Your Ultimate "
           styledTitle="Platform"
           peragraphText=""
         />
       </div>
       <div className="flex justify-between items-center lg:flex-row-reverse flex-col-reverse gap-10 h-[700px] lg:h-[500px] ">
-        <div className="lg:basis-1/2 basis-full">
+        <div data-aos="fade-left" className="lg:basis-1/2 basis-full">
           <Video VideoSource={TaskVideo}></Video>
         </div>
-        <div className="lg:basis-1/2 basis-full">
+        <div data-aos="fade-right" className="lg:basis-1/2 basis-full">
           <div className="flex flex-col gap-10">
             <Card
               icon={<PiUsersFourFill />}
