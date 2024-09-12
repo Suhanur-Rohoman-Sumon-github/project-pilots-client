@@ -56,17 +56,17 @@ const HomeBanner = () => {
           <div className="flex lg:flex-row flex-col items-start lg:items-end gap-5 border border-t-0 border-l-0 border-b-0 border-r-2 border-gray-400 px-5 mr-5">
             <div className="flex  items-start">
               <img
-                src="https://i.ibb.co/WgXHXF7/paul.jpg"
+                src="https://www.shutterstock.com/image-photo/profile-picture-smiling-successful-young-260nw-2040223583.jpg"
                 className="w-12 h-12 rounded-full relative left-10 z-10"
                 alt=""
               />
               <img
-                src="https://i.ibb.co/PDQcrJJ/sam.jpg"
+                src="https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
                 className="w-12 h-12 rounded-full relative left-5"
                 alt=""
               />
               <img
-                src="https://i.ibb.co/7Vfv2XQ/saif.jpg"
+                src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726012800&semt=ais_hybrid"
                 className="w-12 h-12 rounded-full"
                 alt=""
               />
